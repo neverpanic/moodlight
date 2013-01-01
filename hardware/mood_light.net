@@ -1,0 +1,213 @@
+# EESchema Netlist Version 1.1 created  Wed 20 Jun 2012 04:12:11 PM CEST
+(
+ ( /4FDF0E34 SMDHD/VF C1 220µ
+  ( 1 VCC )
+  ( 2 GND )
+ )
+ ( /4FDF0E78 SM0603_Capa C2 100n
+  ( 1 VCC )
+  ( 2 GND )
+ )
+ ( /4FDF0E3D SM0603_Capa C3 100n
+  ( 1 VCC )
+  ( 2 GND )
+ )
+ ( /4FDF0F4F SM0603_Capa C4 100n
+  ( 1 VCC )
+  ( 2 GND )
+ )
+ ( /4FDF0F53 SM0603_Capa C5 100n
+  ( 1 VCC )
+  ( 2 GND )
+ )
+ ( /4FDF0F58 SM0603_Capa C6 100n
+  ( 1 VCC )
+  ( 2 GND )
+ )
+ ( /4FDE0DF8 pin_array_3x2 CON1 AVR-ISP-6
+  ( 1 /PB1 )
+  ( 2 VCC )
+  ( 3 /PB2 )
+  ( 4 /PB0 )
+  ( 5 /RST )
+  ( 6 GND )
+ )
+ ( /4FDF87DD LED-0603 D1 PWR_LED
+  ( 1 N-000004 )
+  ( 2 GND )
+ )
+ ( /4FDF011A SO8N IC1 ATTINY85-S
+  ( 1 /RST )
+  ( 2 /IR )
+  ( 3 ? )
+  ( 4 GND )
+  ( 5 /PB0 )
+  ( 6 /PB1 )
+  ( 7 /PB2 )
+  ( 8 VCC )
+ )
+ ( /4FDF0868 PIN_ARRAY_2X1 P1 PWR_IN
+  ( 1 GND )
+  ( 2 VCC )
+ )
+ ( /4FDE16C9 PIN_ARRAY_3X1 P2 IR
+  ( 1 /IR )
+  ( 2 VCC )
+  ( 3 GND )
+ )
+ ( /4FE09E40 PIN_ARRAY_4x1 P3 LEDS
+  ( 1 VCC )
+  ( 2 /CR )
+  ( 3 /CG )
+  ( 4 /CB )
+ )
+ ( /4FDBB07A SOT23EBC Q1 MMBT2222A
+  ( 1 GND )
+  ( 2 N-000011 )
+  ( 3 N-000010 )
+ )
+ ( /4FDBB054 sot89 Q2 BCX5616TA
+  ( 1 N-000010 )
+  ( 2 /CG )
+  ( 3 N-000011 )
+ )
+ ( /4FDE0CEA SOT23EBC Q3 MMBT2222A
+  ( 1 GND )
+  ( 2 N-000013 )
+  ( 3 N-000012 )
+ )
+ ( /4FDE0CC6 SOT23EBC Q4 MMBT2222A
+  ( 1 GND )
+  ( 2 N-000006 )
+  ( 3 N-000007 )
+ )
+ ( /4FDE0CE8 sot89 Q5 BCX5616TA
+  ( 1 N-000012 )
+  ( 2 /CR )
+  ( 3 N-000013 )
+ )
+ ( /4FDE0CC8 sot89 Q6 BCX5616TA
+  ( 1 N-000007 )
+  ( 2 /CB )
+  ( 3 N-000006 )
+ )
+ ( /4FDF87F2 SM1206 R1 1k
+  ( 1 VCC )
+  ( 2 N-000004 )
+ )
+ ( /4FDBB04E SM1206 R2 2K2
+  ( 1 /PB1 )
+  ( 2 N-000010 )
+ )
+ ( /4FDE0437 SM1210 R3 1R8
+  ( 1 N-000011 )
+  ( 2 GND )
+ )
+ ( /4FDE0CE6 SM1206 R4 2K2
+  ( 1 /PB0 )
+  ( 2 N-000012 )
+ )
+ ( /4FDE0CCA SM1206 R5 2K2
+  ( 1 /PB2 )
+  ( 2 N-000007 )
+ )
+ ( /4FDE0CEC SM1210 R6 1R8
+  ( 1 N-000013 )
+  ( 2 GND )
+ )
+ ( /4FDE0CC4 SM1210 R7 1R8
+  ( 1 N-000006 )
+  ( 2 GND )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C1
+ CP*
+ SM*
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component C5
+ SM*
+ C?
+ C1-1
+$endlist
+$component C6
+ SM*
+ C?
+ C1-1
+$endlist
+$component D1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R7
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}

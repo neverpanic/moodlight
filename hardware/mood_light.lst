@@ -1,0 +1,59 @@
+eeschema (2012-jan-04)-stable  >> Creation date: Tue 19 Jun 2012 08:00:21 PM CEST
+
+#Cmp ( order = Reference )
+| C1         220µ       
+| C2         100n        
+| C3         100n        
+| C4         100n        
+| C5         100n        
+| C6         100n        
+| CON1       AVR-ISP-6   
+| D1         PWR_LED     
+| IC1        ATTINY85-S  
+| P1         PWR IN      
+| P2         IR          
+| P3         LEDS        
+| Q1         MMBT2222A   
+| Q2         BCX5616TA   
+| Q3         MMBT2222A   
+| Q4         MMBT2222A   
+| Q5         BCX5616TA   
+| Q6         BCX5616TA   
+| R1         1k          
+| R2         2K2         
+| R3         1R8         
+| R4         2K2         
+| R5         2K2         
+| R6         1R8         
+| R7         1R8         
+#End Cmp
+
+#Cmp ( order = Value )
+| 100n         C2        
+| 100n         C3        
+| 100n         C4        
+| 100n         C5        
+| 100n         C6        
+| 1k           R1        
+| 1R8          R3        
+| 1R8          R6        
+| 1R8          R7        
+| 220µ        C1        
+| 2K2          R2        
+| 2K2          R4        
+| 2K2          R5        
+| ATTINY85-S   IC1       
+| AVR-ISP-6    CON1      
+| BCX5616TA    Q2        
+| BCX5616TA    Q5        
+| BCX5616TA    Q6        
+| IR           P2        
+| LEDS         P3        
+| MMBT2222A    Q1        
+| MMBT2222A    Q3        
+| MMBT2222A    Q4        
+| PWR IN       P1        
+| PWR_LED      D1        
+#End Cmp
+
+#End List
