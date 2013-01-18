@@ -7,9 +7,9 @@
 
 #define CHMAX 3 // maximum number of PWM channels
 
-#define RED_CLEAR (pinlevelB &= ~(1 << RED)) // map RED to PB0
-#define GREEN_CLEAR (pinlevelB &= ~(1 << GREEN)) // map GREEN to PB1
-#define BLUE_CLEAR (pinlevelB &= ~(1 << BLUE)) // map BLUE to PB2
+#define RED_CLEAR(x) (x &= ~(1 << RED)) // map RED to PB0
+#define GREEN_CLEAR(x) (x &= ~(1 << GREEN)) // map GREEN to PB1
+#define BLUE_CLEAR(x) (x &= ~(1 << BLUE)) // map BLUE to PB2
 
 //! Set bits corresponding to pin usage above
 #define PORTB_MASK  (1 << PB0)|(1 << PB1)|(1 << PB2)
@@ -101,6 +101,7 @@ void init(void) {
 
 
 ISR (TIM0_OVF_vect) {
+  // pinlevelB is the current state. *_CLEAR modifies pinlevelB!
   static unsigned char pinlevelB=PORTB_MASK;
   static unsigned char softcount=0xFF;
 
@@ -115,7 +116,7 @@ ISR (TIM0_OVF_vect) {
     pinlevelB = PORTB_MASK;     // set all port pins high
   }
   // clear port pin on compare match (executed on next interrupt)
-  if(compare[0] == softcount) RED_CLEAR;
-  if(compare[1] == softcount) GREEN_CLEAR;
-  if(compare[2] == softcount) BLUE_CLEAR;
+  if(compare[0] == softcount) RED_CLEAR(pinlevelB);
+  if(compare[1] == softcount) GREEN_CLEAR(pinlevelB);
+  if(compare[2] == softcount) BLUE_CLEAR(pinlevelB);
 }
